@@ -1,0 +1,228 @@
+/* ================================
+   GENERAL RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.converter-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+
+/* ================================
+   CONVERTER CARD
+================================ */
+
+.converter-card {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.converter-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.converter-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.converter-header p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6b7280;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.converter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* ================================
+   INPUT GROUP
+================================ */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #374151;
+}
+
+
+/* ================================
+   INPUT AND SELECT
+================================ */
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: #ffffff;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ================================
+   ERROR MESSAGE
+================================ */
+
+.error-message {
+    min-height: 20px;
+    color: #dc2626;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+#convert-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 14px 20px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#convert-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+
+/* ================================
+   RESULTS
+================================ */
+
+.results-section {
+    margin-top: 35px;
+}
+
+.results-section h2 {
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+/* ================================
+   RESULT CARDS
+================================ */
+
+.result-card {
+    padding: 20px 15px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.result-label {
+    display: block;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.result-card strong {
+    display: block;
+    font-size: 20px;
+    color: #111827;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVENESS
+================================ */
+
+@media (max-width: 600px) {
+
+    .converter-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .converter-header h1 {
+        font-size: 26px;
+    }
+
+    .converter-header p {
+        font-size: 14px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
