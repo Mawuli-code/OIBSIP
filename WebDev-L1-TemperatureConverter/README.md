@@ -136,7 +136,7 @@ Screenshots
 Screenshots demonstrating the application on different screen sizes will be added to the `screenshots` folder.
 
 Desktop
-[Desktop Screenshot](screenshots/desktop.png)
+[Desktop Screenshot](screenshots/laptop.png)
 
 Tablet
 [Tablet Screenshot](screenshots/tablet.png)
